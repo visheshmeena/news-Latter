@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 //The public folder which holds the CSS
 app.use(express.static("public"));
 //Listening on port 3000 and if it goes well then logging a message saying that the server is running
-app.listen(process.env.PORT ,function () {
+app.listen(process.env.PORT || 3000 ,function () {
     console.log("shi hai sb!!!");
 });
 //Sending the signup.html file to the browser as soon as a request is made on localhost:3000
